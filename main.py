@@ -61,9 +61,7 @@ def get_already_downloaded() -> list:
 
 
 def play():
-    files = get_already_downloaded()
-    for song_name in files:
-        system("vlc --start-time=90 " + "songs/"+song_name)
+    system("vlc songs --start-time=90")
 
 
 def download():
